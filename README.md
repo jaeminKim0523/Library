@@ -1,2 +1,5 @@
 # Library
-Study list
+알고있는 정보와 공부중이 것을 정리하는 공간입니다.
+
+## 목록
+- MVVM-C
