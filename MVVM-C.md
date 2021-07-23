@@ -23,6 +23,14 @@ Coordinator - 화면의 생성과 흐름을 담당한다.
 
 <img width="415" alt="스크린샷 2021-07-22 오후 10 09 53" src="https://user-images.githubusercontent.com/55477102/126779960-8aae4996-fb50-4ed4-914c-4626040e1fad.png">
 MVVM-C의 흐름을 표현한 간단하게 작성한 플로우 차트이다.  
+Coordinator의 화살표가 애매하지만... 화살표의 정보에 중점을 두면 될 것 같다. 
+Coordinator는 View를 create, present, push, pop, dismiss 등의 역할을 한다. 
+View는 UserInteraction을 받아서 ViewModel에 Action을 보낸다. 
+#### if Model  
+ViewModel은 Action에 해당하는 데이터를 Model에 요청한다. 
+Model은
+#### if Coordinator  
+
 
 ### Coordinator
 #### Step 1
