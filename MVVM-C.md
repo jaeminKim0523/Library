@@ -94,11 +94,13 @@ SplashCoordinator(Coordinator) - 자신이 담당할 View를 안다. 하지만 M
 주의 할 점은  
 Coordinator가 화면의 흐름을 담당한다고 해서 Coordinator에 자신이 담당해야 할 화면이 아닌 다른 ViewController를 넘겨주지 않도록 설계 해야한다.
 
-### Model
-
 ### View
 
 ### ViewModel
+
+### Model
+
+
 
 
 
