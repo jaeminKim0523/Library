@@ -78,13 +78,14 @@ SplashVC(View) - ViewModel를 안다. 하지만 Model과 Coordinator는 모른�
 SplashVM(ViewModel) - Model, Coordinator를 안다. 하지만 View는 모른다.
 SplashCoordinator(Coordinator) - 자신이 담당할 View를 안다. 하지만 Model, ViewModel은 모른다.
 
+주의 할 점은  
 Coordinator가 화면의 흐름을 담당한다고 해서 Coordinator에 자신이 담당해야 할 화면이 아닌 다른 ViewController를 넘겨주지 않도록 설계 해야한다.
 
-#### Model
+### Model
 
 ### View
 
-#### ViewModel
+### ViewModel
 
 
 
