@@ -72,13 +72,13 @@ Splash화면을 보여준다는 가정의 코드이다.
 [Step1]에서 AppCoordinator에 RootViewController를 주었으므로 현재 AppCoordinator의 navigationController는 RootViewController가 된다.
 AppCoordinator의 navigationController에 SplashViewController를 set한다는 것은 현재 화면에 SplashViewController가 보여지게 되는 것이다.
 
+#### Step 3
 코드를 보면 알겠지만,  
 SplashVC(View) - ViewModel를 안다. 하지만 Model과 Coordinator는 모른다.
 SplashVM(ViewModel) - Model, Coordinator를 안다. 하지만 View는 모른다.
 SplashCoordinator(Coordinator) - 자신이 담당할 View를 안다. 하지만 Model, ViewModel은 모른다.
 
-Coordinator가 화면의 흐름을 담당한닥 해서 Coordinator에 자신이 담당해야 할 화면이 아닌 다른 ViewController를 넘겨주지 않도록 설계 해야한다.
-
+Coordinator가 화면의 흐름을 담당한다고 해서 Coordinator에 자신이 담당해야 할 화면이 아닌 다른 ViewController를 넘겨주지 않도록 설계 해야한다.
 
 #### Model
 
