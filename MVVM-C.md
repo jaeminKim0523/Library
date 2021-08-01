@@ -199,7 +199,7 @@ func displayDetailViewController(entity: entity) {
         coordinator?.displayDetailViewController(entity: entity)
 }
 ```
-```
+```Swift
 // Coordinator
 func displayDetailViewController(entity: entity) {
         let detailCoordinator: DetailCoordinator = DetailCoordinator(navigationController: navigationController)
@@ -219,10 +219,10 @@ Coordinator는 DetailViewController를 보여주기 위해 필요한 데이터�
 Model은 오직 자기 자신만의 일을 한다.  
 - API를 호출하기 위해 사용되는 Network Class  
 - Keychain을 저장하기 위한 Class  
-- Userdefaults를 사용하기 위한 Class
-등등 수없이 많아질 수 있다.
+- Userdefaults를 사용하기 위한 Class. 
+등등 수없이 많아질 수 있다.  
 
-가장 많이 사용되는 Api 통신 Model을 간단한 코드로 표현하자면,
+가장 많이 사용되는 Api 통신 Model을 간단한 코드로 표현하자면,  
 ```Swift        
 class NetworkModel: NSObject {
         typealias CompletionHandler = (Data?, URLResponse?, Error?) -> Void
@@ -241,25 +241,15 @@ class NetworkModel: NSObject {
         }
 }
 ```
-너무 간단하게 표현한 것 같지만, 이런 느낌일 것이다.
-request함수로 URL을 받아서 해당 url을 통해 데이터를 받아오 그 데이터를 @escaping closure를 통해 비동기로 리턴해준다.
-이러한 하나의 독립된 기능을 담당하는 것이 Model이 하는 역할이다.
+너무 간단하게 표현한 것 같지만, 이런 느낌일 것이다.  
+request함수로 URL을 받아서 해당 url을 통해 데이터를 받아오 그 데이터를 @escaping closure를 통해 비동기로 리턴해준다.  
+이러한 하나의 독립된 기능을 담당하는 것이 Model이 하는 역할이다.  
 
+### 마무리
+많이 부족하지만 MVVM-C에 대해 개인적으로 공부하고 리펙토링도 해보며 깨닳고 배운것들을 작성해보았다.  
+MVVM-C에 대하여 공부하며 가장 많이 하게된 생각은 "이게 맞는가?" 라는 자기 자신에게 던지는 질문이었고  
+두번째 생각은 결국 아키텍처에 맞춰 프로그래밍을 한다는 것은 나 혹은 같이 일하는 동료와의 약속을 잘 지켜야 한다는 생각이었다.  
 
+사실 위에 작성한 것들이 정말 제대로 이해하고 작성했는지도 확신이 들지 않는다.  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+문제점이나 수정해야 할 부분이 있다면, 메일 부탁드립니다.  
