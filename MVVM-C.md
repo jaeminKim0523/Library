@@ -104,7 +104,22 @@ View는 Swift에서 View와 ViewController, UserInteraction등의 UI요소를 �
 만약 TableView or CollectionView와 같이 리스트를 보여주게 될 때 해당 리스트의 데이터를 표현하는 것은 View에서 한다.  
 표현하고자 하는 데이터는 ViewModel로 부터 받아오는 것이다.
 
+간단한 코드를 예를 들면, 검색 버튼이 눌렸을 때 ViewModel을 통해 검색 데이터를 받아오느 코드.
+```Swift
+func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        viewModel?.searchBook(search: searchBar.text ?? "")
+}
+```
+테이블뷰의 셀 UI의 이미지를 표현하기 위한 데이터를 받아오느 코드.
+```Swift
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyCell
+        let model = viewModel?.models[indexPath.row]
+        cell.imageView = model.image
+}
+```
 이렇게 리스트가 보여질때는 Delegate 패턴을 통해 ViewModel로 부터 데이터를 받아오는 것은 쉽게 받아 올 수 있다.
+
 View에서 검색한 결과를 받아온다는 상황을 가정해보자.
 1. 검색어를 입력한다.
 2. 검색 버튼을 누른다.
@@ -120,10 +135,66 @@ View는 단순하게 ViewModel에 데이터를 요청하고 새로운 데이터�
 ViewModel을 옵셔널로 선언하여 View만을 테스트 하고자 할 때 ViewModel을 사용하지 않을 수 있다.
 
 ### ViewModel
+ViewModel은 Model과의 데이터 송, 수신 및 Coordinator로 화면 구성 요청 등의 역할을 한다.  
+자세한 역할은 코드와 함께 하나하나 짚어보도록 한다.  
+
+첫번째로 Model과의 데이터를 주고받는 코드를 보면,  
+```Swift
+// 데이터 변화를 알리기 위한 Combine 
+import Combine
+
+// 검색 데이터를 알리 위한 PassthroughSubject
+let searchSubject: PassthroughSubject = PassthroughSubject<Model, Never>()
+
+func searchBook(search keyword: String) {
+        ApiService.loadSearchResult(keyword: keyword) { (data, response, error) in
+                 guard let resultData = data else { return }
+                 guard let resultJson = try? JSONSerialization.jsonObject(with: resultData, options: .mutableContainers) as? [String : Any] else {
+                        return
+                 }
+                 
+                 // Codable을 써도 됩니다.
+                 let model: Model = Model(dictionary: resultJson)
+                 
+                 // Combine의 PassthroughSubject를 통해 모델 전달
+                 self.searchSubject.send(model)
+        }
+}
+```
+위와 같은 코드로 표현 할 수 있다. (이해하기 쉽도록 View에서 사용한 코드와 연결되도록 코드 작성). 
+간단하게 코드를 설명하면, ApiService Class를 통해서 검색 결과를 받아오는 함수이며, 이 결과를 Model 구조체로 생성하고 그 model을 Combine을 이용하여 전달하는 역할을 한다.  
+
+Combine이 궁금하실 수 있지만 그 설명보다 MVVM에서 왜 RxSwift, Combine과 같은 비동기 데이터 전달이 필요한 이유가 중요하다.  
+위에서 표현하기를 (View <-> ViewModel <-> Model) 이런 식으로 표현을 했지만, 이것은 데이터의 흐름일 뿐이다.  
+의존성을 표현하자면, (View -> ViewModel -> Model + Coordinator) 이렇게 된다.  
+View는 ViewModel을 알지만, ViewModel은 View를 모른다.  
+
+ViewModel이 검색 결과를 Model로 부터 전달 받았다.  
+하지만 ViewModel은 View를 모르기 때문에 View에게 검색 결과에 대한 데이터를 넘겨줄 방법이 없다.  
+그럼 ViewModel이 View에게 데이터를 어떻게 받아야 할까?  
+
+그 방법을 생각나는대로 적어보자면,
+- @escaping closure를 이용하여 넘겨주는 방법
+- View의 함수 자체를 넘겨주는 방법
+- Rx, Combine과 같이 비동기 지원 라이브러리를 사용하는 방법
+- Delegate를 이용하는 방법
+등이 있을 것 같다. (더 많은 방법이 있을 수 있다.)
+
+여러가지 방식중 MVVM 아키텍처를 사용하는 많은 곳에서 Rx, Combine과 같은 라이브러리를 사용하는 이유는.  
+다른 방식보다 더욱 간편하게 구성이 가능하며, 코드를 간단하게 구성 할 수 있어 리딩하기에도 편리하다.
+```Swift
+func fetchSearchBook() {
+        viewModel?.searchSubject.sink(receiveValue: { model in
+                print(model)
+        }).store(in: &cancelStore)
+}
+```
+데이터의 변동에 대한 알림을 받고 데이터를 받아오는 것에 2줄이면 충분하게 끝나버린다.  
+모든 라이브러리의 사용이 그러하듯 Rx와 Combine과 같은 비동기 데이터 바인딩을 도와주는 라이브러리 또한 기능을 구성하는 시간을 줄일 수 있기 때문에 사용하게 된다.  
+
+
 
 ### Model
-
-
 
 
 
