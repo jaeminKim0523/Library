@@ -219,7 +219,7 @@ Coordinator는 DetailViewController를 보여주기 위해 필요한 데이터�
 Model은 오직 자기 자신만의 일을 한다.  
 - API를 호출하기 위해 사용되는 Network Class  
 - Keychain을 저장하기 위한 Class  
-- Userdefaults를 사용하기 위한 Class. 
+- Userdefaults를 사용하기 위한 Class  
 등등 수없이 많아질 수 있다.  
 
 가장 많이 사용되는 Api 통신 Model을 간단한 코드로 표현하자면,  
