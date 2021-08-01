@@ -6,7 +6,7 @@
 - ecaping과 nonescaping의 차이 link: [escaping]
 
 
-[MVVM-C]: https://github.com/jaeminKim0523/Library/blob/main/MVVM-C "Read MVVM-C"
-[escaping]: https://github.com/jaeminKim0523/Library/blob/main/escaping "Read escaping"
+[MVVM-C]: https://github.com/jaeminKim0523/Library/blob/main/MVVM-C.md "Read MVVM-C"
+[escaping]: https://github.com/jaeminKim0523/Library/blob/main/escaping.md "Read escaping"
 
 
