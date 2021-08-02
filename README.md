@@ -9,6 +9,6 @@
 
 [MVVM-C]: https://github.com/jaeminKim0523/Library/blob/main/MVVM-C.md "Read MVVM-C"
 [escaping]: https://github.com/jaeminKim0523/Library/blob/main/escaping.md "Read escaping"
-[DispatchQueue]: https://github.com/jaeminKim0523/Library/blob/main/escaping.md "Read DispatchQueue"
+[DispatchQueue]: https://github.com/jaeminKim0523/Library/blob/main/DispatchQueue.md "Read DispatchQueue"
 
 
