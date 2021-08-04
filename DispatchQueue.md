@@ -28,9 +28,59 @@ DispatchQueue가 작업하는 방식은 위의 예시정도로 간단하게 설�
 ## Queue의 종류와 설명
 DispatchQueue에는 Serial, Concurrency 두가지의 Queue가 존재한다.  
 이번 차례에서는 이 두가지를 알아보고자 한다.  
-### Serial
+### Serial  
+```Swift
+let queue = DispatchQueue(label: "test")
 
-### Concurrency
+queue.async {
+  for num in 0 ..< 5 {
+    print(num)
+  }
+}
+queue.async {
+  for num in 100 ..< 105 {
+    print(num)
+  }
+}
+
+// 0
+// 1
+// 2
+// 3
+// 4
+// 100
+// 101
+// 102
+// 103
+// 104
+```
+
+### Concurrency 
+```Swift
+let queue = DispatchQueue(label: "test", attributes: .concurrent)
+
+queue.async {
+  for num in 0 ..< 5 {
+    print(num)
+  }
+}
+queue.async {
+  for num in 100 ..< 105 {
+    print(num)
+  }
+}
+
+// 100
+// 0
+// 1
+// 2
+// 3
+// 4
+// 101
+// 102
+// 103
+// 104
+``` 
 
 
 
