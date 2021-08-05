@@ -11,7 +11,7 @@ QuickHelp는 사용자가 선언한 변수, 상수, class, struct, protocol 등�
 ![quickhelper1](https://user-images.githubusercontent.com/55477102/128331926-e53e2bbf-3f99-4009-870c-797b764477ae.png)  
 위의 스크린샷처럼 주석이 작성된 곳을 클릭하면 Inspactor(Xcode 우측 메뉴)의 (?)메뉴에서 보이는 설명들이 Quick Help다.  
 
-Quick Help는 Github의 .md파일 처럼 Markdown을 사용하여 주석을 꾸밀 수 있다.
+Quick Help는 Github의 .md파일 처럼 Markdown을 사용하여 주석을 꾸미고 그 주석을 표현하여 준다.  
 
 바로 본론으로 들어가서 아래와 같은 결과물을 만들어 볼 것이다.  
 ### Quick Help 결과
