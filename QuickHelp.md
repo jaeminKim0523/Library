@@ -3,7 +3,7 @@
 1. Quick Help란?  
 2. Quick Help 결과물  
 3. Quick Help 결과물 코드  
-4. Quick Help 설명
+4. Quick Help Markdown 설명
 
 ## Quick Help란?
 QuickHelp는 사용자가 선언한 변수, 상수, class, struct, protocol 등등 거의 모든 곳에 작성된 주석을 보여주는 기능이다.  
@@ -112,17 +112,18 @@ TODO주석과 같이 Minimap상에 글자가 표시되지 않지만 동일하게
 ***  
 
 #### 두번째로 Quick Help에서 주석을 보여주고 꾸밀 수 있는 Markdown을 알아보자.  
-1. Summary 주석
+1. Summary 주석  
 <img width="199" alt="스크린샷 2021-08-05 오후 7 51 53" src="https://user-images.githubusercontent.com/55477102/128338523-175f9302-a468-4c4a-89cb-5238ec1f1cc9.png">  
+
 ```Swift
 /**
   주석의 첫줄은 Summary에 작성됩니다.
 */
-```
-
-******  
-2. Discussion 주석
+```   
+***  
+2. Discussion 주석  
 <img width="210" alt="스크린샷 2021-08-05 오후 7 55 11" src="https://user-images.githubusercontent.com/55477102/128338920-9a031451-8936-43db-90cc-3ff0ea099de2.png">  
+
 ```Swift
 /**
   주석의 첫줄은 Summary에 작성됩니다.
@@ -130,28 +131,28 @@ TODO주석과 같이 Minimap상에 글자가 표시되지 않지만 동일하게
   두번째 줄은 항상 Discussion 주석입니다.
 */
 ```
-
 ***  
-3. 기울기 텍스트
+3. 기울기 텍스트  
 <img width="94" alt="스크린샷 2021-08-05 오후 8 02 49" src="https://user-images.githubusercontent.com/55477102/128340364-d66e95a9-ad38-4010-9857-542395af19be.png">  
+
 ```Swift
 /**
   기울기 *텍스트* 작성
 */
-```
-
+```  
 ***  
 4. 볼드(굵은) 텍스트
 <img width="83" alt="스크린샷 2021-08-05 오후 8 02 36" src="https://user-images.githubusercontent.com/55477102/128340365-bad3ed5d-7ccc-46f0-93bc-8bb0139b3d64.png">  
+
 ```Swift
 /**
   볼드 **텍스트** 작성
 */
 ```
-
 ***  
 5. 순서 없는 목차
-<img width="62" alt="스크린샷 2021-08-05 오후 8 03 35" src="https://user-images.githubusercontent.com/55477102/128340363-69ff3211-b67f-4ef6-86d4-cbc16b636a72.png">
+<img width="62" alt="스크린샷 2021-08-05 오후 8 03 35" src="https://user-images.githubusercontent.com/55477102/128340363-69ff3211-b67f-4ef6-86d4-cbc16b636a72.png">  
+
 ```Swift
 /**
   * 목차1
@@ -159,10 +160,10 @@ TODO주석과 같이 Minimap상에 글자가 표시되지 않지만 동일하게
   * 목차3
 */
 ```
-
 ***  
 6. 순서 있는 목차
 <img width="54" alt="스크린샷 2021-08-05 오후 8 03 56" src="https://user-images.githubusercontent.com/55477102/128340360-d8d01546-47fb-4a15-a491-1b3dae98e1ba.png">  
+
 ```Swift
 /**
   1. 목차1
@@ -170,10 +171,10 @@ TODO주석과 같이 Minimap상에 글자가 표시되지 않지만 동일하게
   3. 목차3
 */
 ```
-
 ***  
 7. 코드 작성
 <img width="408" alt="스크린샷 2021-08-05 오후 8 05 34" src="https://user-images.githubusercontent.com/55477102/128340358-40d1955c-be4f-42ab-8e80-d7a5d97c0e90.png">  
+
 ~~~Swift
 /**
   ```
@@ -182,10 +183,10 @@ TODO주석과 같이 Minimap상에 글자가 표시되지 않지만 동일하게
   ```
 */
 ~~~
-
 ***  
 8. Parameters(인자값)
-<img width="84" alt="스크린샷 2021-08-05 오후 8 05 55" src="https://user-images.githubusercontent.com/55477102/128340357-76291bc8-f463-46c4-af22-55b4fdca5b19.png">
+<img width="84" alt="스크린샷 2021-08-05 오후 8 05 55" src="https://user-images.githubusercontent.com/55477102/128340357-76291bc8-f463-46c4-af22-55b4fdca5b19.png">  
+
 ```Swift
 /**
   - parameters:
@@ -193,60 +194,64 @@ TODO주석과 같이 Minimap상에 글자가 표시되지 않지만 동일하게
     - age: 나이
 */
 ```
-
 ***  
 9. Author(작성자))
 <img width="73" alt="스크린샷 2021-08-05 오후 8 06 02" src="https://user-images.githubusercontent.com/55477102/128340355-288f4dc7-a1bc-44d4-81ff-fad89b613870.png">  
+
 ```Swift
 /**
   - Author: Kim jaemin
 */
 ```
-
 ***  
 10. Since(작성일)
 <img width="82" alt="스크린샷 2021-08-05 오후 8 06 05" src="https://user-images.githubusercontent.com/55477102/128340352-0275b411-416a-4509-8a56-f1cd82581587.png">  
+
 ```Swift
 /**
   - Since: 2020-12-04
 */
 ```
-
 ***  
 11. ToDo (해야 할 것 메모)
-<img width="137" alt="스크린샷 2021-08-05 오후 8 06 08" src="https://user-images.githubusercontent.com/55477102/128340349-6d18618e-9cd2-4471-886f-a535bc74834b.png">
+<img width="137" alt="스크린샷 2021-08-05 오후 8 06 08" src="https://user-images.githubusercontent.com/55477102/128340349-6d18618e-9cd2-4471-886f-a535bc74834b.png">  
+
 ```Swift
 /**
   - ToDo: age값에 따른 예외 처리 필요
 */
 ```
-
 ***  
 12. Copyright (저작권) + URL Link
-<img width="88" alt="스크린샷 2021-08-05 오후 8 06 11" src="https://user-images.githubusercontent.com/55477102/128340347-16faa1c9-d97e-499e-8f22-979fada5829d.png">
+<img width="88" alt="스크린샷 2021-08-05 오후 8 06 11" src="https://user-images.githubusercontent.com/55477102/128340347-16faa1c9-d97e-499e-8f22-979fada5829d.png">  
+
 ```Swift
 /**
   - Copyright: [jaeminGithub](https://github.com/jaeminKim0523)
 */
 ```
-
 ***  
 13. Throws
-<img width="219" alt="스크린샷 2021-08-05 오후 8 06 16" src="https://user-images.githubusercontent.com/55477102/128340343-d26d119c-182b-4d33-89a8-dcc12f00319d.png">
+<img width="219" alt="스크린샷 2021-08-05 오후 8 06 16" src="https://user-images.githubusercontent.com/55477102/128340343-d26d119c-182b-4d33-89a8-dcc12f00319d.png">  
+
 ```Swift
 /**
   - throws:
     - **name**의 문자열 값이 빈값일 때 오류 반환
 */
 ```
-
 ***  
 14. Return
 <img width="97" alt="스크린샷 2021-08-05 오후 8 06 18" src="https://user-images.githubusercontent.com/55477102/128340328-4fbc142b-4d62-4575-8106-d4185524ab5f.png">  
+
 ```Swift
 /**
   - returns:
     - Bool: 논리값
 */
 ```
-***  
+***
+
+이렇게 여러가지의 Xcode Quick help를 꾸밀 Markdown을 알아보았다.  
+위에 적혀있는 것들이 전부는 아니겠지만, 다양한 Markdown을 사용하여 주석을 작성 할 때 꾸미는 즐거움도 느껴보는 것도 좋을 것 같다.
+
