@@ -95,18 +95,21 @@ Minimap이란, 위와 같이 Xcode에서 코드와 Inspactor의 사이에 보여
 <img width="641" alt="스크린샷 2021-08-05 오후 7 35 50" src="https://user-images.githubusercontent.com/55477102/128336630-04b21687-7eb3-4ea8-9597-49c2c2729977.png">  
 MARK 주석은 말 그대로 표시를 할 때 사용하는 주석이다.  
 Minimap상에서 해당 주석의 콜론( : ) 뒤에 작성된 글이 보이는 것을 확인 할 수 있다.  
+
 작성법: "// MARK: 주석" 이다.  
 
 2. TODO
 <img width="636" alt="스크린샷 2021-08-05 오후 7 36 04" src="https://user-images.githubusercontent.com/55477102/128337060-3eb38885-596d-4ba9-a761-e4dd6cf12e80.png">  
 TODO 주석은 추후에 추가적으로 해야 할 작업이 있다는 것을 표시하기 위한 주석이다.  
 Minimap상에서 글자는 표시되지 않지만, 스크린샷을 보면 얇은 회색 실선으로 표시된다.  
+
 작성법: "// TODO: 주석" 이다.  
 
 3. FIXME  
 <img width="638" alt="스크린샷 2021-08-05 오후 7 36 20" src="https://user-images.githubusercontent.com/55477102/128337293-9fbac304-b46f-40af-86c7-bb9a58ad3ce6.png">  
-FIXME 주석은 수정해야 할 곳을 표시하는 주석이다.  
+FIXME 주석은 수정해야 할 곳을 표시하는 주석이다.   
 TODO주석과 같이 Minimap상에 글자가 표시되지 않지만 동일하게 얇은 회색 실선이 표시된다.  
+
 작성법: "// FIXME: 주석" 이다.  
 
 ***  
