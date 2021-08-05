@@ -30,7 +30,7 @@ DispatchQueue에는 Serial, Concurrency 두가지의 Queue가 존재한다.
 이번 차례에서는 이 두가지를 알아보고자 한다.  
 ### Serial  
 ![queue1](https://user-images.githubusercontent.com/55477102/128028335-254e7478-e0a0-4f56-9a18-89fb8f7eb183.png)  
-Serial 방식은 특징에서 보았던 스샷인 순차적으로 Task를 처리한다.  
+Serial 방식은 특징에서 보았던 스샷처럼 [1개의 쓰레드]에서 Task를 순차적으로 처리한다.  
 코드로 텍스트를 출력해보면 더욱 이해하기 쉬울 것 같다.  
 ```Swift
 let queue = DispatchQueue(label: "test")
