@@ -97,7 +97,7 @@ queue.async {
 // 104
 ``` 
 Concurrency Queue는 DispatchQueue를 선언 할 때 attributes 파라메터에 concurrent를 넘겨주어 설정한다.  
-출력 내용을 보면, 순서와 상관없이 코드가 출력되는 것을 알 수 있다.
+출력 내용을 보면, 순서와 상관없이 코드가 출력되는 것을 알 수 있다.  
 위에서 대괄호로 강조를 했듯이 여러개의 쓰레드로 분산시켜서 Task를 처리하기 때문에 1개의 쓰레드에서 순차적으로 Task를 처리하는 Serial Queue보다 속도가 더 빠르다.  
 
 ## Main Queue와 Global Queue 차이
