@@ -1,6 +1,6 @@
 # Library
 - MVVM-C iOS architecture link: [MVVM-C]
-- ecaping과 nonescaping의 차이 link: [escaping]
+- ecaping과 none-escaping의 차이 link: [escaping]
 - DispatchQueue 사용 link: [DispatchQueue]
 - QuickHelp 사용 link: [QuickHelp]
 
