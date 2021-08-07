@@ -1,5 +1,5 @@
 # MVVM, MVVM-C 아키텍처
-예제: [MVVM-C 예제]
+아키텍처 예제: [MVVM-C 예제]
 ### 목차
 - MVVM + 한줄 설명
 - MVVM-C + 한줄 설명
