@@ -101,10 +101,59 @@ Concurrency Queue는 DispatchQueue를 선언 할 때 attributes 파라메터에 
 위에서 대괄호로 강조를 했듯이 여러개의 쓰레드로 분산시켜서 Task를 처리하기 때문에 1개의 쓰레드에서 순차적으로 Task를 처리하는 Serial Queue보다 속도가 더 빠르다.  
 
 ## Main Queue와 Global Queue 차이
+#### Global
+```
+DispatchQueue.global().async {
+  print("in Global queue")
+}
+```
 
+#### Main
+```
+DispatchQueue.main.async {
+  print("in Global queue")
+}
+```
+Main은 기본적으로 Serial이며, Global은 기본적으로 Concurrent다.  
+그렇기 때문에 Main은 async로 사용해야 병렬 작업을 할 수 있다.  
+사실 Main을 sync로 사용하게 되면, Main에서의 Thread가 deadlock이 걸려서 앱이 죽게된다.  
+그 이유는  
+1. Main은 기본적을 Serial이다. (하나의 쓰레드만 사용한다.). 
+2. Main.sync는 이미 작업 진행중이다.  
+입니다.  
+
+이해를 돕기 위해 조금 길게 말하면, Main에서는 이미 Foreground의 작업을 하나씩 하나씩 Serial 방식으로 작업중인 와중에 갑자기 사용자가 sync로 쓰레드를 사용하니 Main이 Serial로 진행중이던 작업이 멈추며 Deadlock이 발생하여 앱이 죽는 것이다.  
+
+Global은 sync와 async 두가지 모두 사용 가능하다.  
 
 ## QoS(Quality of Service)
+QoS는 작업으 중요도를 설정한다고 생각하면 될 것 같다.  
+중요도의 종류는. 
+* User-interactive
+* User-initiated
+* Utility
+* Background
+가 있다.  
 
+#### User-interactive
+사용자의 인터렉션에 대한 단계를 의미한다.
+애니메이션 등과 같은 대응을 해야 할 때 중요도가 낮아 다른 작업에 순위가 밀린다면 사용자는 멈춰있다고 판단 할 수 있게 되며, UX에 좋지 않을 수 있다.  
+그렇기 때문에 User-interactive가 가장 높은 단계로 되어있다.  
+
+#### User-initiated
+사용자의 행동에 응답을 하는 단계이다.  
+위의 User-interactive보다 한단계 낮은 단계이며, 사용자의 행동(버튼 터치 등)에 데이터를 보여주는 등의 결과를 보여줄 때 사용하는 단계라고 생각하면 될 것 같다.  
+사용자가 결과를 보기위해 버튼을 누르고 화면에 결과가 조그 늦게 보여지는 것보다 애니메이션은 조금의 끊김이 부자연스러움으로 이어지는 것에 대한 차이가 아닐까 생각한다.  
+
+#### Utility
+빠르게 결과를 보여주지 않아도 되는 상황에 쓰는 단계이다.
+보통 서버로부터 데이터나 이미지를 받아오는 상황에 많이 쓰이며, 핸드폰의 성능을 효율적으로 사용하도록 작업이 진행된다고 한다.
+
+#### Background
+단계의 이름 그대로 백그라운드에서의 작업에 사용되는 단계이다.  
+이 단계에서의 속도는 상당히 느리며 n분 이상의 시간이 걸린닥 한다.  
+사용자에게 보여지지 않느 작업에 사용하며, 배터리 효율에 중점을 둔다.  
+대부분의 작업은 Utility 단계에서 하는 것이 좋을 것 같다.  
 
 ## Sync와 Async
 
