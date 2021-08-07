@@ -102,14 +102,14 @@ Concurrency Queue는 DispatchQueue를 선언 할 때 attributes 파라메터에 
 
 ## Main Queue와 Global Queue 차이
 #### Global
-```
+```Swfit
 DispatchQueue.global().async {
   print("in Global queue")
 }
 ```
 
 #### Main
-```
+```Swfit
 DispatchQueue.main.async {
   print("in Global queue")
 }
@@ -156,5 +156,15 @@ QoS는 작업으 중요도를 설정한다고 생각하면 될 것 같다.
 대부분의 작업은 Utility 단계에서 하는 것이 좋을 것 같다.  
 
 ## Sync와 Async
+sync와 async의 차이는 명확하다.
+sync는 동기이며, async는 비동기이다.
 
+단순하게 sync는 작업이 할당된 쓰레드에서 이전에 있던 작업이 끝나면 실행된다.
+반면, async는 작업이 있든 없든 작업중이라면 다른 쓰레드로 보내서 바로 다음 작업을 진행한다.
 
+Serial과 Concurrency의 차이와 같다고 생각하면 편할 것 같다.
+
+1. Serial에서 async로 작업을 하면, 비동기이기 때문에 쓰레드와 순서에 상관없이 작업이 될 수 있다.
+2. Serial에서 sync로 작업을 하면, 1개의 쓰레드에서 입력된 작업 순서에 맞게 작업한다.
+3. Concurrency에서 Async로 하면, 1번고 같이 순서를 따르지 않는다.
+4. Concurrency에서 sync로 하면, Concurrency 자체가 여러개의 쓰레드를 쓰기 때문에 1번과 같이 순서를 따르지 않게 된다.
