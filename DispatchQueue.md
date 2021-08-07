@@ -102,14 +102,14 @@ Concurrency Queue는 DispatchQueue를 선언 할 때 attributes 파라메터에 
 
 ## Main Queue와 Global Queue 차이
 #### Global
-```Swfit
+```Swift
 DispatchQueue.global().async {
   print("in Global queue")
 }
 ```
 
 #### Main
-```Swfit
+```Swift
 DispatchQueue.main.async {
   print("in Global queue")
 }
