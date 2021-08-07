@@ -17,7 +17,7 @@ Coordinator는 간단하게 화면의 생성과 흐름을 관리하는 역할을
 MVVM은 View - ViewModel - Model로 역할을 나누어 서로의 의존성을 낮추기 위해 사용하는 아키텍처이다.  
 View - UI의 역할,  
 ViewModel - 화면의 데이터를 관리하는 역할,  
-Model - 자신의 고유한 기능을 갖는 역할을 담당한다.  
+Model - View와 ViewModel이 사용하는 데이터 역할이다.
 
 그렇다면 MVVM-[Coordinator]의 역할은 무엇일까?  
 Coordinator는 화면의 생성과 흐름을 담당한다.
@@ -87,9 +87,9 @@ class AppCoordinator {
 
 #### Step 3
 코드를 보면 알겠지만,  
-SplashVC(View) = ViewModel를 안다. 하지만 Model과 Coordinator는 모른다.
-SplashVM(ViewModel) = Model, Coordinator를 안다. 하지만 View는 모른다.
-SplashCoordinator(Coordinator) = 자신이 담당할 View(RootViewController를)만을 안다. 하지만 Model, ViewModel은 모른다.
+SplashVC(View) = ViewModel를 안다. 하지만 Coordinator는 모른다.
+SplashVM(ViewModel) = Coordinator를 안다. 하지만 View는 모른다.
+SplashCoordinator(Coordinator) = 자신이 담당할 View(RootViewController를)만을 안다. 하지만 ViewModel은 모른다.
 
 주의 할 점은  
 Coordinator가 화면의 흐름을 담당한다고 해서 Coordinator에 자신이 담당해야 할 화면단이 아닌 이전에 보여주었던 화면등을 넘겨주지 않도록 설계를 해야한다.
@@ -138,7 +138,7 @@ View는 단순하게 ViewModel에 데이터를 요청하고 새로운 데이터�
 ViewModel은 Model과의 데이터 송, 수신 및 Coordinator로 화면 구성 요청 등의 역할을 한다.  
 자세한 역할은 코드와 함께 하나하나 짚어보도록 한다.  
 ***
-첫번째로 Model과의 데이터를 주고받는 코드를 보면,  
+첫번째로 Service와 데이터를 주고받는 코드를 보면,  
 ```Swift
 // 데이터 변화를 알리기 위한 Combine 
 import Combine
@@ -161,7 +161,7 @@ Combine이 궁금하실 수 있지만 그 설명보다 MVVM에서 왜 RxSwift, C
 의존성을 표현하자면, (View -> ViewModel -> Model 또는 Coordinator) 이렇게 된다.  
 View는 ViewModel을 알지만, ViewModel은 View를 모른다.  
 
-ViewModel이 검색 결과를 Model로 부터 전달 받았다.  
+ViewModel이 검색 결과를 Service로 부터 전달 받았다.  
 하지만 ViewModel은 View를 모르기 때문에 View에게 검색 결과에 대한 데이터를 넘겨줄 방법이 없다.  
 그럼 ViewModel이 View에게 데이터를 어떻게 받아야 할까?  
 
@@ -263,7 +263,3 @@ MVVM-C에 대하여 공부하며 가장 많이 하게된 생각은 "이게 맞�
 문제점이나 수정해야 할 부분이 있다면, 메일 부탁드립니다.  
 
 [MVVM-C 예제]: https://github.com/jaeminKim0523/MVVM-C "Read MVVM-C"
-
-
-
-
