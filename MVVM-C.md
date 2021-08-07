@@ -146,22 +146,14 @@ import Combine
 let searchSubject: PassthroughSubject = PassthroughSubject<Entity, Never>()
 
 func searchBook(search keyword: String) {
-        ApiService.loadSearchResult(keyword: keyword) { (data, response, error) in
-                 guard let resultData = data else { return }
-                 guard let resultJson = try? JSONSerialization.jsonObject(with: resultData, options: .mutableContainers) as? [String : Any] else {
-                        return
-                 }
-                 
-                 // Codable을 써도 됩니다.
-                 let entity: Entity = Entity(dictionary: resultJson)
-                 
+        ApiRepository.loadSearchResult(keyword: keyword) { (Model) in
                  // Combine의 PassthroughSubject를 통해 모델 전달
-                 self.searchSubject.send(entity)
+                 self.searchSubject.send(Model)
         }
 }
 ```
 위와 같은 코드로 표현 할 수 있다. (이해하기 쉽도록 View에서 사용한 코드와 연결되도록 작성). 
-간단하게 설명하면, ApiService Class를 통해서 검색 결과를 받아오는 함수이며, 이 결과를 Entity 구조체로 생성하고 그 Entity를 Combine을 이용하여 전달하는 역할을 한다.  
+간단하게 설명하면, ApiService Class를 통해서 검색 결과를 받아오는 함수이며, 이 결과를 Model 구조체로 생성하고 그 Model Combine을 이용하여 전달하는 역할을 한다.  
 
 Combine이 궁금하실 수 있지만 그 설명보다 MVVM에서 왜 RxSwift, Combine과 같은 비동기 데이터 전달이 필요한 이유가 중요하다.  
 위에서 표현하기를 (View <-> ViewModel <-> Model) 이런 식으로 표현을 했지만, 이것은 데이터의 흐름일 뿐이다.  
@@ -214,16 +206,31 @@ ViewModel은 Coordinator의 DetailViewController를 보여주기 위한 함수�
 View는 Entity를 ViewModel로 부터 받아서 사용하기에 Entity를 가지고 있지 않는다.  
 Coordinator는 DetailViewController를 보여주기 위해 필요한 데이터를 가진 Entity를 요구하고 그 Entity를 넘겨주기 위해 ViewModel을 통해 Coordinator를 사용하게 되는 것이다.  
 ***
-### Model
-Model은 오직 자기 자신만의 일을 한다.  
+### Model + Service
+#### Model
+Model은 Service로부터 받은 Data를 앱에서 사용하기 위한 자료이다.
+```Swift
+struct Model {
+        let title: String
+        let publisher: String
+        let publishedDate: Date
+}
+```
+위와 같은 구조체를 Model이라고 할 수 있다.
+
+Entity와의 차이는 Entity는 서버로 부터 받은 데이터를 파싱한 데이터의 구조체이며, Model은 ViewModel, View, Coordinator에서 실제로 사용 될 데이터를 가진 구조체이다.  
+
+#### Service
 - API를 호출하기 위해 사용되는 Network Class  
 - Keychain을 저장하기 위한 Class  
 - Userdefaults를 사용하기 위한 Class  
+
+Service는 오직 자기 자신만의 일을 한다.  
 등등 수없이 많아질 수 있다.  
 
-가장 많이 사용되는 Api 통신 Model을 간단한 코드로 표현하자면,  
+가장 많이 사용되는 Api 통신 Service를 간단한 코드로 표현하자면,  
 ```Swift        
-class NetworkModel: NSObject {
+class NetworkService: NSObject {
         typealias CompletionHandler = (Data?, URLResponse?, Error?) -> Void
 
         private var urlSession: URLSession
@@ -253,3 +260,10 @@ MVVM-C에 대하여 공부하며 가장 많이 하게된 생각은 "이게 맞�
 사실 위에 작성한 것들이 정말 제대로 이해하고 작성했는지도 확신이 들지 않는다.  
 
 문제점이나 수정해야 할 부분이 있다면, 메일 부탁드립니다.  
+
+
+
+
+
+
+
