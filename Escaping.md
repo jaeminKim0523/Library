@@ -1,4 +1,4 @@
-# escaping과 nonescaping의 차이
+# Escaping과 None-Escaping의 차이
 @escaping 어노테이션을 쓰고 안쓰고으 차이는 간단하게 closure값의 전달이 비동기로 전달되는지에 따라 달라진다.
 
 ### ex)1
