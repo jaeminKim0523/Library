@@ -29,6 +29,7 @@ ARC는 할당된 메모리의 갯수를 카운팅한다.
 관리해야 할 상황은 3가지 참조를 예시로 알아보도록 한다.
 
 ## Strong Reference
+![ARC2](https://user-images.githubusercontent.com/55477102/128632635-b216732e-f683-4ccf-9191-f124bde112e4.png)  
 ```Swift
 class A {
   var b: B?
@@ -50,6 +51,7 @@ myB = nil
 
 
 ## Weak Reference
+![ARC3](https://user-images.githubusercontent.com/55477102/128632637-abf79fa3-6fcd-4e68-b8a0-83d26b036834.png)  
 ```Swift
 class A {
   var b: B?
@@ -71,6 +73,7 @@ myB = nil
 
 
 ## Unowned Reference
+![ARC4](https://user-images.githubusercontent.com/55477102/128632638-37968fd2-dcbb-4af8-8fc3-0599d335f12c.png)  
 ```Swift
 class A {
   var b: B?
