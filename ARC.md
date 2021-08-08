@@ -19,12 +19,75 @@ ARC는 할당된 메모리의 갯수를 카운팅한다.
 현재 사용되고 있는 메모리가 몇개인지 어디에 있는 메모리를 사용하고 있는지 알아야 해당 메모리를 해제 할 수 있기 때문이다.  
 기본적으로 클래스와 같은 레퍼런스형 인스턴스는 Heap에 저장된다.  
 
-```Swift
-
-```
+![ARC1](https://user-images.githubusercontent.com/55477102/128631958-918f1afa-9678-4435-8071-65d66f04050b.png)  
+위의 스크린샷 처럼 A Class를 선언하면, Heap에 메모리가 할당되고 해제됩니다.  
 
 아주 편한 기능이고 대부분의 상황에 사용자가 메모리 관리를 하지 않아도 된다.
 [대부분]의 상황에 한해서다.  
 그러면 사용자가 메모리를 [관리]해야하는 상황은 어떤 상황일까?
+
+관리해야 할 상황은 3가지 참조를 예시로 알아보도록 한다.
+
+## Strong Reference
+```Swift
+class A {
+  var b: B?
+}
+
+class B {
+  var a: A?
+}
+
+let a: A? = A()
+let b: B? = B()
+
+a.b = b
+b.a = a
+
+a = nil
+b = nil
+```
+
+
+## Weak Reference
+```Swift
+class A {
+  var b: B?
+}
+
+class B {
+  weak var a: A?
+}
+
+let a = A()
+let b = B()
+
+a.b = b
+b.a = a
+
+a = nil
+b = nil
+```
+
+
+## Unowned Reference
+```Swift
+class A {
+  var b: B?
+}
+
+class B {
+  unowned var a: A?
+}
+
+let a = A()
+let b = B()
+
+a.b = b
+b.a = a
+
+a = nil
+b = nil
+```
 
 
