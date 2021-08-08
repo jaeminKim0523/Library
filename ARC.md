@@ -38,14 +38,14 @@ class B {
   var a: A?
 }
 
-let a: A? = A()
-let b: B? = B()
+let myA: A? = A()
+let myB: B? = B()
 
-a.b = b
-b.a = a
+myA.b = b
+myB.a = a
 
-a = nil
-b = nil
+myA = nil
+myB = nil
 ```
 
 
@@ -59,14 +59,14 @@ class B {
   weak var a: A?
 }
 
-let a = A()
-let b = B()
+let myA = A()
+let myB = B()
 
-a.b = b
-b.a = a
+myA.b = b
+myB.a = a
 
-a = nil
-b = nil
+myA = nil
+myB = nil
 ```
 
 
@@ -80,14 +80,14 @@ class B {
   unowned var a: A?
 }
 
-let a = A()
-let b = B()
+let myA = A()
+let myB = B()
 
-a.b = b
-b.a = a
+myA.b = b
+myB.a = a
 
-a = nil
-b = nil
+myA = nil
+myB = nil
 ```
 
 
