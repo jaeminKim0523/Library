@@ -19,7 +19,7 @@ ARC는 이름과 같이 할당된 메모리를 사용하는 참조의 갯수를 
 그래야만 현재 사용되고 있는 메모리를 참조하는 곳이 몇개인지, 메모리가 사용되고 있는 중인지 정보를 알아야 해당 메모리를 해제 할 수 있기 때문이다.  
 ```Swift
 class A {
-  name: String = "Kim jaemin"
+  let name: String = "Kim jaemin"
 }
 
 var a1 = A() // count = 1
