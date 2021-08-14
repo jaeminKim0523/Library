@@ -20,7 +20,14 @@ UILabel을 하나 Storyboard의 ViewController에 생성해주었다.
 
 <img width="251" alt="스크린샷 2021-08-15 오전 12 15 33" src="https://user-images.githubusercontent.com/55477102/129450912-0d204fb4-07d0-4337-be0a-4510343b5bd6.png">  
 <img width="396" alt="스크린샷 2021-08-15 오전 12 17 06" src="https://user-images.githubusercontent.com/55477102/129450966-895c1d55-8497-4b37-9bd1-ae91c44db6d3.png">  
+위의 스크린샷을 보면 UILabel에 파란색 간격을 표시하는 UI가 생긴 것이 보인다.  
+UILabel의 Constraint가 설정되었다는 표시이다.  
+
+이 간격은 핸드폰이 가로 간격이 되어도, 화면의 크기가 달라져도 그 [간격]이 변하지 않는다.  
+<img width="257" alt="스크린샷 2021-08-15 오전 12 22 34" src="https://user-images.githubusercontent.com/55477102/129451118-d09ecf21-9461-4836-93cf-3925d5cf565f.png">  
+위의 스크린샷 처럼 화면이 가로가 되어도 설정한 상단 100의 간격과 좌측 100의 간격을 유지하고 있는다.  
 
 
+<img width="257" alt="스크린샷 2021-08-15 오전 12 22 34" src="https://user-images.githubusercontent.com/55477102/129451118-d09ecf21-9461-4836-93cf-3925d5cf565f.png">  
 
 
