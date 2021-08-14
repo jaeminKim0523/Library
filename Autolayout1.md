@@ -26,8 +26,10 @@ UILabel의 Constraint가 설정되었다는 표시이다.
 이 간격은 핸드폰이 가로 간격이 되어도, 화면의 크기가 달라져도 그 [간격]이 변하지 않는다.  
 <img width="257" alt="스크린샷 2021-08-15 오전 12 22 34" src="https://user-images.githubusercontent.com/55477102/129451118-d09ecf21-9461-4836-93cf-3925d5cf565f.png">  
 위의 스크린샷 처럼 화면이 가로가 되어도 설정한 상단 100의 간격과 좌측 100의 간격을 유지하고 있는다.  
+  
+<img width="488" alt="스크린샷 2021-08-15 오전 12 28 13" src="https://user-images.githubusercontent.com/55477102/129451261-19a48592-7766-4d4e-9e03-0b0cec8a2f57.png">  
+UILabel을 하나 더 추가해주고 높이 100 간격, 좌우 50, 너비 100의 간격을 추가해보자.
 
-
-<img width="257" alt="스크린샷 2021-08-15 오전 12 22 34" src="https://user-images.githubusercontent.com/55477102/129451118-d09ecf21-9461-4836-93cf-3925d5cf565f.png">  
-
-
+<img width="255" alt="스크린샷 2021-08-15 오전 12 34 20" src="https://user-images.githubusercontent.com/55477102/129451524-efb5e243-9db9-4a64-b87c-c0aff68b504b.png"><img width="554" alt="스크린샷 2021-08-15 오전 12 39 34" src="https://user-images.githubusercontent.com/55477102/129451589-903f6e19-a0fb-4a9d-b71d-7a52f1398ab3.png">  
+추가된 UILabel은 처음의 UILabel 우측과 50, 상단 100, 우측 50 그리고 너비 100의 Constraint가 설정되었다.  
+이 간격은 가로가 되어도 변하지 않기 때문에 우측 스크린샷과 같이 가로모드가 되면 처음에 만들어진 UILabel의 너비가 길어지고 너비 100으로 설정된 UILabel은 현재 크기를 갖고 자동으로 레이아웃이 잡히게 된다.  
