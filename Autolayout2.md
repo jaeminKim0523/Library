@@ -15,16 +15,17 @@ UILabel 2개를 생성하고 각 Label에게 좌우 Constraint를 주었더니, 
 이유는 UILabel의 특성에 있다.  
 UILabel은 좌우 Constraint나 너비를 고정시켜주지 않으면 UILabel의 Text에 따라 길이가 가변된다.  
 하지만 위의 스크린샷에서 각 UILabel은 너비가 고정되어 있지 않을 뿐더러, 좌우 Constraint는 존재하지만 서로 의지하는 대상(각 UILabel)의 너비가 가변이다.  
-의지하는 대상이 어느 크기만큼 커질지 작아질지를 알아야 나의 크기를 계산 할 텐데 가변성 때문에 계산을 하지 못하는 것이다.  
+의지하는 대상이 어느 크기만큼 커질지 작아질지를 알아야 나의 크기를 계산 할 텐데 UILabel의 가변성 때문에 계산을 하지 못하는 것이다.  
 
 그럼 이 문제를 해결해보기 위해 이번 주제인 Content Hugging Priority를 써보도록 한다.  
 Content Hugging Priority는 위에서 설명했지만, 중요도를 설정하는 것이다.  
-이 것을 보면, 어느정도 추측이 가능하다.  
-중요도를 높이거나 낮춰서 내가 의지하는 대상보다 나의 크기를 더 우선시하거나 대상을 더 우선시하거나를 선택하는 것이다.  
+중요도를 높이거나 낮춰서 내가 의지하는 대상보다 나의 크기를 더 우선시 할지 대상을 더 우선시할지를 선택하는 것이다.  
 
 <img width="251" alt="스크린샷 2021-08-15 오후 3 24 31" src="https://user-images.githubusercontent.com/55477102/129469789-4c6abd3c-3155-466a-a1d7-bb4eeeb58769.png">  
 Content Hugging Priority 설정 초기값은 251이다.  
-우리는 2개의 UILabel가 설정한 우선순위에 따라 가로로 넓어지거나 작아지도록 해볼 것이기 때문에 test1 UILabel의 Horizontal값을 252로 올려보자  
+우리는 2개의 UILabel에 설정한 우선순위에 따라 가로로 넓어지거나 작아지도록 해볼 것이기 때문에 test1 UILabel의 Horizontal값을 252로 올려보자  
+설정한다면, test1의 우선순위는 252 / test2의 우선순위는 251이 된다.  
+test1가 test2보다 더 중요해진 것이다.  
 
 <img width="262" alt="스크린샷 2021-08-15 오후 3 53 17" src="https://user-images.githubusercontent.com/55477102/129469858-1a728747-8b28-4ef5-8b80-93ca75e268b8.png">  
 test1 UILabel의 Horizontal값을 252로 설정한 결과이다.  
