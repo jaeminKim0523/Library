@@ -145,6 +145,9 @@ print(value2.x)
 value1과 value2가 바라보고 있는 곳이 같기 때문에 value2의 값을 바꾼다는 것은 value1의 값 또한 바뀐다.  
 그리고 ReferenceCount 또한 1개가 증가한다.  
 ARC는 이 Count가 0이 되었을때 메모리를 
-***  
-이러한 차이점 때문에 Value와 Reference의 사용상의 차이점이 생긴다.  
-
+***   
+비교적 가볍게 Value와 Reference의 차이를 알아보았다.  
+Value Type은 Reference Counting이 필요없고 Heap에 접근하지 않아 다량의 데이터를 사용 할 때 접근이 더 빠르고 내용 수정시에도 더 빠르다.  
+하지만 Value Type들은 Class와 같은 Reference처럼 하나의 객체로 사용하기에 적합하지 않다.  
+하지만 이 단점을 제외한 대부분의 상황에서 빠르 데이터 접근과 수정이라는 장점은 놓칠 수 없다.  
+그렇기 때문에 적절한 곳에 Reference와 Value Type을 사용하면 앱을 더 빠르게 작동시킬 수 있다.  
