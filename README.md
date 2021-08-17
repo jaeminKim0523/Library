@@ -29,7 +29,7 @@
 ### UI
 - Autolayout - Constraint: [Autolayout1]  
 - Autolayout - Content Hugging Priority: [Autolayout2]
-- Autolayout - Content Compression Resistance Priority : [Autolayout2]
+- Autolayout - Content Compression Resistance Priority: [Autolayout2]
 
 [Autolayout1]: https://github.com/jaeminKim0523/Library/blob/main/Autolayout1.md "Read Autolayout1"  
 [Autolayout2]: https://github.com/jaeminKim0523/Library/blob/main/Autolayout2.md "Read Autolayout2"
