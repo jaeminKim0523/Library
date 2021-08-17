@@ -1,6 +1,7 @@
 # Autolayout2 - Content Hugging Priority
 Autolayout1에서는 Constraint를 설정하는 기초를 알아보았다면, 2에서는 조금 심화된 내용인 Content Hugging Priority 알아보려고 한다.  
 Content Hugging Priority를 직역하면, 콘텐츠가 안는 우선순위 이다.  
+핵심은 Content Hugging Priority는 Content가 자신의 크기 이상으로 늘어날 수 있는지의 중요도이다.  
 이 의미는 말로 설명하기보다는 스크린샷과 사용방법을 설명하면서 이해하는 것이 좋을 거 같다.  
 
 <img width="256" alt="스크린샷 2021-08-15 오후 3 25 19" src="https://user-images.githubusercontent.com/55477102/129469527-89084b25-9656-4746-b071-b966b906feb9.png">  
@@ -38,4 +39,4 @@ test1 UILabel이 test2 UILabel보다 더 중요해졌고 그로인해 test1의 �
 <img width="267" alt="스크린샷 2021-08-15 오후 4 05 28" src="https://user-images.githubusercontent.com/55477102/129470103-055e3caa-4566-4e16-8d11-4696fb847284.png">  
 당연히 test1 UILabel의 너비보다 test2 UILabel의 너비가 더 중요해졌고 test1 UILabel은 자신의 너비를 포기하고 test2 UILabel의 너비에 맞춰서 자신의 너비를 넓히게 된다.  
 
- 가변형인 두개의 UI에 Autolayout을 구성하고자 할 때 사용하는 방법중 하나이다.
+ 가변형인 두개의 UI에 어느 하나의 UI가 자신의 너비를 [Content에 맞추지 않고 더 넓혀] Autolayout을 구성하고자 할 때 사용하는 방법중 하나이다.
