@@ -25,16 +25,27 @@ Content Compression Resistance Priority는 중요도가 낮을때 나보다 높�
 ***  
 
 글로는 이해가 어려울 수 있으니 스크린샷을 통해 두가지 모두 사용하는 케이스를 알아보자.  
-  
-<img width="303" alt="스크린샷 2021-08-19 오후 10 35 21" src="https://user-images.githubusercontent.com/55477102/130078381-6a2c4709-efbb-45d9-afb3-60ee47e00667.png">  
-왼쪽 UI의 Content Compression Resistance Priority = 751 / Content Hugging Priority = 250   
-오른쪽 UI의 Content Compression Resistance Priority = 750 / Content Hugging Priority = 251   
-로 설정하였다.  
 
+첫번째로 왼쪽 UILabel의 Text를 줄여보자.  
+<img width="261" alt="스크린샷 2021-08-20 오후 11 58 17" src="https://user-images.githubusercontent.com/55477102/130253036-2fb44148-96fb-46ff-858d-a79ae4356579.png">  
+Constraint가 깨진것을 볼 수 있다.  
+왜일까?  
+우리는 현재 Text가 길어졌을때 어떤 UI를 우선으로 표현할지에 대한 Content Compression Resistance Priority 설정만 했고, Text가 짧아졌을때 어떤 UI의 너비가 길어져서 UI를 구성할지에 해당하는  Content Hugging Priority 설정을 하지 않았다.  
 
-<img width="262" alt="스크린샷 2021-08-19 오후 10 35 26" src="https://user-images.githubusercontent.com/55477102/130078389-2ecbff20-d6b3-4d7e-9437-a202aafa8301.png">  
+그러면, 왼쪽 UI의 Content Compression Resistance Priority = 751 / Content Hugging Priority = 250   
+오른쪽 UI의 Content Compression Resistance Priority = 750 / Content Hugging Priority = 251 로 설정해보자.  
 
+<img width="262" alt="스크린샷 2021-08-21 오전 12 03 38" src="https://user-images.githubusercontent.com/55477102/130253786-9a76bf1d-619e-440c-8db2-e0a909d8a58a.png">  
 
+위의 설정값으로 변경시 스크린샷처럼 Content Hugging Priority가 더 낮은 왼쪽 UI의 너비가 넓어지고,
+오른쪽 UI는 자신의 Content인 Text의 길이에 맞게 너비가 정해진 것을 볼 수 있다.  
 
+그렇다면, 왼쪽 UI의 Text를 길게 설정하면 어떻게 될까?  
+
+<img width="260" alt="스크린샷 2021-08-21 오전 12 10 38" src="https://user-images.githubusercontent.com/55477102/130254510-ecfb8b5a-ddd5-4086-8bf3-c6893e116e78.png">  
+스크린샷처럼 이번에는 Content Compression Resistance Priority의 중요도가 더 높은 왼쪽 UI의 Text길이가 길어지고 오른쪽 UI의 너비가 좁아진 것을 볼 수 있다.  
+
+두 UI의 콘텐츠가 모두 짧을때는 Content Hugging Priority가 낮은 왼쪽 UI의 너비가 넓어지면서 오른쪽 UI의 Content 크기에 맞춰주고,  
+UI의 콘텐츠가 너무 길면 Content Compression Resistance Priority가 낮은 오른쪽 UI의 너비가 좁아지며 왼쪽 UI의 Content를 보여주게 되는 것이다.  
 
 [Autolayout2]: https://github.com/jaeminKim0523/Library/blob/main/Autolayout2.md "Read Autolayout2"
