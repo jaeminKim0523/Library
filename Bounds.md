@@ -1,5 +1,4 @@
-# Bounds
-## Bounds란?
+# Bounds 란?
 
 
-## Bounds 정리
+# Bounds 정리
