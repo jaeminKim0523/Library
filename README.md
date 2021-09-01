@@ -5,7 +5,7 @@
 - Observer pattern link: [Observer Pattern]
 
 [MVVM-C]: https://github.com/jaeminKim0523/Library/blob/main/MVVM-C.md "Read MVVM-C"
-[Observer Pattern]: https://github.com/jaeminKim0523/Library/blob/main/Observer Pattern.md "Read MVVM-C"
+[Observer Pattern]: https://github.com/jaeminKim0523/Library/blob/main/ObserverPattern.md "Read Observer Pattern"  
 
 ### Compiler
 - ARC link: [ARC]  
