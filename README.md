@@ -2,8 +2,10 @@
 
 ### Software Architecture, Design Pattern
 - MVVM-C iOS architecture link: [MVVM-C]  
+- Observer pattern link: [Observer Pattern]
 
 [MVVM-C]: https://github.com/jaeminKim0523/Library/blob/main/MVVM-C.md "Read MVVM-C"
+[Observer Pattern]: https://github.com/jaeminKim0523/Library/blob/main/Observer Pattern.md "Read MVVM-C"
 
 ### Compiler
 - ARC link: [ARC]  
