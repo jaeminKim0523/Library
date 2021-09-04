@@ -1,5 +1,5 @@
 # Observable methods List
-1. just
+1. [just]
 2. of
 3. range
 4. empty
