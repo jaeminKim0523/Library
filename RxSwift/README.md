@@ -1,41 +1,41 @@
 # RxSwift - Operators list
-###Operator의 종류 리스트
+### Operator의 종류 리스트
 
-ignoreElements
-elementAt
-filter
-skip
-skipWhile
-skipUntil
-take
-takeWhile
-takeUntil
-enumerated
-distinctUntilChanged
-toArray
-map
-flatMap
-flatMapLatest
-startWith
-concat
-concatMap
-merge
-combineLatest
-zip
-withLatestFrom
-sample
-amb
-switchLatest
-reduece
-scan
-replay
-replayAll
-multicast
-publish
-buffer
-window
-delay
-delaySubscription
-interval
-timer
-timeout
+1. elementAt
+2. ignoreElements
+3. enumerated
+4. filter
+5. skip
+6. skipWhile
+7. skipUntil
+8. take
+9. takeWhile
+10. takeUntil
+11. distinctUntilChanged
+12. toArray
+13. map
+14. flatMap
+15. flatMapLatest
+16. startWith
+17. concat
+18. concatMap
+19. merge
+20. combineLatest
+21. zip
+22. withLatestFrom
+23. sample
+24. amb
+25. switchLatest
+26. reduece
+27. scan
+28. replay
+29. replayAll
+30. multicast
+31. publish
+32. buffer
+33. window
+34. delay
+35. delaySubscription
+36. interval
+37. timer
+38. timeout
