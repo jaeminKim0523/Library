@@ -1,17 +1,17 @@
 # RxSwift - Operators list
-### Operator의 종류 리스트
 
+### Operator의 종류 리스트
 1. elementAt
 2. ignoreElements
 3. enumerated
 4. filter
-5. skip
-6. skipWhile
-7. skipUntil
-8. take
-9. takeWhile
-10. takeUntil
-11. distinctUntilChanged
+5. distinctUntilChanged
+6. take
+7. takeWhile
+8. takeUntil
+9. skip
+10. skipWhile
+11. skipUntil
 12. toArray
 13. map
 14. flatMap
