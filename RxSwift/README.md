@@ -1,1 +1,41 @@
-# READ ME
+# RxSwift - Operators list
+###Operator의 종류 리스트
+
+ignoreElements
+elementAt
+filter
+skip
+skipWhile
+skipUntil
+take
+takeWhile
+takeUntil
+enumerated
+distinctUntilChanged
+toArray
+map
+flatMap
+flatMapLatest
+startWith
+concat
+concatMap
+merge
+combineLatest
+zip
+withLatestFrom
+sample
+amb
+switchLatest
+reduece
+scan
+replay
+replayAll
+multicast
+publish
+buffer
+window
+delay
+delaySubscription
+interval
+timer
+timeout
