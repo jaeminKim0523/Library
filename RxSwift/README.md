@@ -12,7 +12,7 @@
 10. onCompleted
 11. do
 12. debug
-
+***  
 ### Operators List
 1. elementAt
 2. ignoreElements
