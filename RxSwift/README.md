@@ -1,5 +1,5 @@
 # RxSwift - Operators list
-### Observable methods List
+### Observable [methods list]
 1. just
 2. of
 3. range
@@ -13,7 +13,7 @@
 11. do
 12. debug
 ***  
-### Operators List
+### [Operators List]
 1. elementAt
 2. ignoreElements
 3. enumerated
@@ -52,3 +52,6 @@
 36. interval
 37. timer
 38. timeout
+
+[Methods list]: https://github.com/jaeminKim0523/Library/tree/main/RxSwift/Methods%20List "Read Methods list"
+[Operators List]: https://github.com/jaeminKim0523/Library/tree/main/RxSwift/Operators%20List "Read Operators List"
