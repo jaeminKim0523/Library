@@ -4,7 +4,7 @@
 3. [range]
 4. [empty]
 5. [never]
-6. create
+6. [create]
 7. disposed
 8. onNext
 9. onError
@@ -17,3 +17,4 @@
 [range]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/range.md "Read range"  
 [empty]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/empty.md "Read empty"  
 [never]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/never.md "Read never"  
+[create]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/create.md "Read create"  
