@@ -36,7 +36,7 @@
 ### UI
 - Autolayout - Constraint: [Autolayout1]  
 - Autolayout - Content Hugging Priority: [Autolayout2]
-- Autolayout - Content Compression Resistance Priority: [Autolayout2]
+- Autolayout - Content Compression Resistance Priority: [Autolayout3]
 - Bounds - Bounds란?: [Bounds]
 
 [Autolayout1]: https://github.com/jaeminKim0523/Library/blob/main/UI/Autolayout1.md "Read Autolayout1"  
