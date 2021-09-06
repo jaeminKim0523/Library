@@ -39,7 +39,7 @@
 - Autolayout - Content Compression Resistance Priority: [Autolayout2]
 - Bounds - Bounds란?: [Bounds]
 
-[Autolayout1]: https://github.com/jaeminKim0523/Library/blob/main/Autolayout1.md "Read Autolayout1"  
-[Autolayout2]: https://github.com/jaeminKim0523/Library/blob/main/Autolayout2.md "Read Autolayout2"
-[Autolayout3]: https://github.com/jaeminKim0523/Library/blob/main/Autolayout3.md "Read Autolayout3"
-[Bounds]: https://github.com/jaeminKim0523/Library/blob/main/Bounds.md "Read Bounds"
+[Autolayout1]: https://github.com/jaeminKim0523/Library/blob/main/UI/Autolayout1.md "Read Autolayout1"  
+[Autolayout2]: https://github.com/jaeminKim0523/Library/blob/main/UI/Autolayout2.md "Read Autolayout2"
+[Autolayout3]: https://github.com/jaeminKim0523/Library/blob/main/UI/Autolayout3.md "Read Autolayout3"
+[Bounds]: https://github.com/jaeminKim0523/Library/blob/main/UI/Bounds.md "Read Bounds"
