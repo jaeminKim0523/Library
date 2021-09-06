@@ -3,7 +3,7 @@
 2. [of]
 3. [range]
 4. [empty]
-5. never
+5. [never]
 6. create
 7. disposed
 8. onNext
@@ -16,3 +16,4 @@
 [of]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/of.md "Read of"  
 [range]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/range.md "Read range"  
 [empty]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/empty.md "Read empty"  
+[never]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/never.md "Read never"  
