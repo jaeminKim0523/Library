@@ -4,13 +4,13 @@
 - MVVM-C iOS architecture link: [MVVM-C]  
 - Observer pattern link: [Observer Pattern]
 
-[MVVM-C]: https://github.com/jaeminKim0523/Library/blob/main/MVVM-C.md "Read MVVM-C"
-[Observer Pattern]: https://github.com/jaeminKim0523/Library/blob/main/ObserverPattern.md "Read Observer Pattern"  
+[MVVM-C]: https://github.com/jaeminKim0523/Library/blob/main/Software/MVVM-C.md "Read MVVM-C"
+[Observer Pattern]: https://github.com/jaeminKim0523/Library/blob/main/Software/ObserverPattern.md "Read Observer Pattern"  
 
 ### Compiler
 - ARC link: [ARC]  
 
-[ARC]: https://github.com/jaeminKim0523/Library/blob/main/ARC.md "Read ARC"
+[ARC]: https://github.com/jaeminKim0523/Library/blob/main/Compiler/ARC.md "Read ARC"
 
 ### Swift
 - Value & Reference link: [ValueReferenceTypes]
@@ -18,10 +18,10 @@
 - Ecaping과 None-Escaping의 차이 link: [Escaping]  
 - DispatchQueue 사용 link: [DispatchQueue]  
 
-[ValueReferenceTypes]: https://github.com/jaeminKim0523/Library/blob/main/ValueReferenceTypes.md "Read ValueReferenceTypes"
-[Closure]: https://github.com/jaeminKim0523/Library/blob/main/Closure.md "Read Closure"
-[Escaping]: https://github.com/jaeminKim0523/Library/blob/main/Escaping.md "Read Escaping"
-[DispatchQueue]: https://github.com/jaeminKim0523/Library/blob/main/DispatchQueue.md "Read DispatchQueue"
+[ValueReferenceTypes]: https://github.com/jaeminKim0523/Library/blob/main/Swift/ValueReferenceTypes.md "Read ValueReferenceTypes"
+[Closure]: https://github.com/jaeminKim0523/Library/blob/main/Swift/Closure.md "Read Closure"
+[Escaping]: https://github.com/jaeminKim0523/Library/blob/main/Swift/Escaping.md "Read Escaping"
+[DispatchQueue]: https://github.com/jaeminKim0523/Library/blob/main/Swift/DispatchQueue.md "Read DispatchQueue"
 
 ### RxSwift
 - RxSwift link: [RxSwift]
@@ -31,7 +31,7 @@
 ### Xcode
 - QuickHelp 사용 link: [QuickHelp]  
 
-[QuickHelp]: https://github.com/jaeminKim0523/Library/blob/main/QuickHelp.md "Read QuickHelp"
+[QuickHelp]: https://github.com/jaeminKim0523/Library/blob/main/Xcode/QuickHelp.md "Read QuickHelp"
 
 ### UI
 - Autolayout - Constraint: [Autolayout1]  
