@@ -1,5 +1,5 @@
 # Library
-####(링크 마우스 오버시 해당 링크의 간략한 내용 표시)
+#### (링크 마우스 오버시 해당 링크의 간략한 내용 표시)
 
 ### Software Architecture, Design Pattern
 - MVVM-C iOS architecture link: [MVVM-C]  
