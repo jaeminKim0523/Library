@@ -17,9 +17,35 @@ let observable: Observable<String> = Observable<String>.create{ (observer) -> Di
   return Disposables.create()
 }
 
-observable.subscribe { (event) in
-  print(event)
-}
+observable.do(onNext: { (next) in
+    print("onNext: \(next)")
+},
+afterNext: { (next) in
+    print("afterNext: \(next)")
+},
+onError: { (error) in
+    print("onError: \(error)")
+},
+afterError: { (error) in
+    print("afterError: \(error)")
+},
+onCompleted: {
+    print("onCompleted")
+},
+afterCompleted: {
+    print("afterCompleted")
+},
+onSubscribe: {
+    print("onSubscribe")
+},
+onSubscribed: {
+    print("onSubscribed")
+},
+onDispose: {
+    print("onDispose")
+}).subscribe { (event) in
+    print(event)
+}.disposed(by: disposeBag)
 
 // 출력: next(First)
 // 출력: next(Second)
