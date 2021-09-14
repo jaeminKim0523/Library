@@ -15,3 +15,4 @@
 [never]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/never.md "Read never"  
 [create]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/create.md "Read create"  
 [do]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/do.md "Read do" 
+[debug]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/debug.md "Read debug" 
