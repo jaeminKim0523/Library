@@ -35,7 +35,7 @@ observable.subscribe { (event) in
 위와 같이 출력된다.  
 만일 onError, onCompleted가 Second와 Third사이에 들어가면 Third는 출력이 되지 않게된다.  
 
-```Swit
+```Swift
 enum error: Error {
   case error
 }
