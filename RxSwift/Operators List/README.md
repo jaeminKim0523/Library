@@ -1,6 +1,6 @@
 # Operators List
 1. [elementAt]
-2. ignoreElements
+2. [ignoreElements]
 3. enumerated
 4. filter
 5. distinctUntilChanged
@@ -39,3 +39,4 @@
 38. timeout
 
 [elementAt]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/elementAt.md "Read elementAt"
+[ignoreElements]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/ignoreElements.md "Read ignoreElements"
