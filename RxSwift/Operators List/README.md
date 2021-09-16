@@ -5,7 +5,7 @@
 4. [filter]
 5. [distinctUntilChanged]
 6. [take]
-7. takeWhile
+7. [takeWhile]
 8. takeUntil
 9. skip
 10. skipWhile
