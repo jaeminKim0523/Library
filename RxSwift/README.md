@@ -19,6 +19,19 @@
 [debug]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Methods%20List/debug.md "Read debug" 
 ***
 ### [Operators List]
+1. [elementAt]
+2. [ignoreElements]
+3. [enumerated]
+4. [filter]
+5. [distinctUntilChanged]
+6. [take]
+
+[elementAt]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/elementAt.md "Read elementAt"
+[ignoreElements]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/ignoreElements.md "Read ignoreElements"
+[enumerated]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/enumerated.md "Read enumerated"
+[filter]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/filter.md "Read filter"
+[distinctUntilChanged]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/distinctUntilChanged.md "Read distinctUntilChanged"
+[take]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/take.md "Read take"
 
 [Methods list]: https://github.com/jaeminKim0523/Library/tree/main/RxSwift/Methods%20List "Read Methods list"
 [Operators List]: https://github.com/jaeminKim0523/Library/tree/main/RxSwift/Operators%20List "Read Operators List"
