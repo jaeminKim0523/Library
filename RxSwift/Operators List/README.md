@@ -44,3 +44,4 @@
 [filter]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/filter.md "Read filter"
 [distinctUntilChanged]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/distinctUntilChanged.md "Read distinctUntilChanged"
 [take]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/take.md "Read take"
+[takeWhile]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/takeWhile.md "Read takeWhile"
