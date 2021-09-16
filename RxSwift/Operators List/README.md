@@ -1,5 +1,5 @@
 # Operators List
-1. elementAt
+1. [elementAt]
 2. ignoreElements
 3. enumerated
 4. filter
