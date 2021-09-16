@@ -4,7 +4,7 @@
 3. [enumerated]
 4. [filter]
 5. [distinctUntilChanged]
-6. take
+6. [take]
 7. takeWhile
 8. takeUntil
 9. skip
@@ -43,3 +43,4 @@
 [enumerated]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/enumerated.md "Read enumerated"
 [filter]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/filter.md "Read filter"
 [distinctUntilChanged]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/distinctUntilChanged.md "Read distinctUntilChanged"
+[take]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/take.md "Read take"
