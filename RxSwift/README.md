@@ -25,10 +25,12 @@
 4. [filter]
 5. [distinctUntilChanged]
 6. [take]
-7. [skip]
-8. [skipWhile]
-9. [skipUntil]
-10. [skip(duration, scheduler)]
+7. [takeWhile]
+8. [takeUntil]
+9. [skip]
+10. [skipWhile]
+11. [skipUntil]
+12. [skip(duration, scheduler)]
 
 [elementAt]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/elementAt.md "Read elementAt"
 [ignoreElements]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/ignoreElements.md "Read ignoreElements"
