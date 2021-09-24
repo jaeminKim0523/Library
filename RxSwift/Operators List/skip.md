@@ -1,15 +1,4 @@
-# Operator - skip
-skip은 이름 그대로 이벤트를 넘긴다.  
-이벤트를 넘기는 조건을 나눌 수 있는 4가지 메소드가 있다.  
-
-1. count
-2. until
-3. while
-4. duration, scheduler
-
-하나씩 알아보자.
-***  
-### count
+# Operator - skip(count)
 ```Swift
 let subject: PublishSubject<Int> = PublishSubject<Int>()
 let skipCount: Int = 2
@@ -29,31 +18,6 @@ subject.onNext(5)
 ```
 count는 인자로 넘겨준 Int만큼 이벤트를 넘긴다.
 위의 코드와 출력을 보면 인자로 2를 넘겨주었고 1과 2라는 2개의 이벤트가 넘겨져 3에서 5까지만 출력이 된다.
-***
-### until
-```Swift
-let subject: PublishSubject<Int> = PublishSubject<Int>()
-let nextSubject: PublishSubject<Int> = PublishSubject<Int>()
-subject.skip(until: nextSubject).subscribe(onNext: { (str) in
-  print(str)
-}).disposed(by: disposeBag)
-
-subject.onNext(1)
-subject.onNext(2)
-
-nextSubject.onNext(0)
-
-subject.onNext(3)
-subject.onNext(4)
-subject.onNext(5)
-
-// 출력: 3
-// 출력: 4
-// 출력: 5
-```
-until은 인자로 넘겨진 Observable의 이벤트가 들어오는 시점까지 자신의 이벤트를 무시한다.  
-위의 코드를 보면 알겠지만, nextSubject에 이벤트가 들어오는 시점까지 subject의 이벤트가 무시된다.  
-코드는 subject의 1, 2 이벤트 이후에 nextSubeject의 이벤트를 발생시켰기 때문에 subject의 1, 2 이벤트는 무시되고 그 이후의 이벤트만을 출력시켰다.  
 ***
 ### while
 ```Swift
