@@ -7,7 +7,7 @@
 6. [take]
 7. [takeWhile]
 8. [takeUntil]
-9. skip
+9. [skip]
 10. skipWhile
 11. skipUntil
 12. toArray
@@ -46,3 +46,4 @@
 [take]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/take.md "Read take"
 [takeWhile]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/takeWhile.md "Read takeWhile"
 [takeUntil]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/takeUntil.md "Read takeUntil"
+[skip]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/skip.md "Read skip"
