@@ -12,7 +12,7 @@
 11. [skipUntil]
 12. [skip(duration, scheduler)]
 13. [toArray]
-14. map
+14. [map]
 15. flatMap
 16. flatMapLatest
 17. startWith
@@ -52,3 +52,4 @@
 [skipUntil]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/skip.md "Read skipUntil"
 [skip(duration, scheduler)]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/skipDurationScheduler.md "Read skip(duration, scheduler)"
 [toArray]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/toArray.md "Read toArray"
+[map]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/map.md "Read map"
