@@ -74,4 +74,4 @@
 [toArray]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/toArray.md "Read toArray"
 [map]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/map.md "Read map"
 [flatMap]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/flatMap.md "Read flatMap"
-[flatMapLatest]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/flatMap.md "Read flatMapLatest"
+[flatMapLatest]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/flatMapLatest.md "Read flatMapLatest"
