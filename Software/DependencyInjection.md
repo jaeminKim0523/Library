@@ -84,14 +84,14 @@ protocol ListDataProvider {
   var list: [String] { get set }
 }
 
-// ViewModel은 protocol에 의존한다.
+// ViewModel은 protocol(추상화)에 의존한다.
 class ViewModel: ListDataProvider {
   var list: [String] = ["a", "b", "c"]
 }
 
 class ViewController: UIViewController {
 
-  // ViewController 또한 protocol에 의존한다.
+  // ViewController 또한 protocol(추상화)에 의존한다.
   var viewModel: ListDataProvider
   
   // protocol을 통해 의존성을 주입받는다.
