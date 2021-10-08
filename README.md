@@ -8,7 +8,7 @@
 
 [MVVM-C]: https://github.com/jaeminKim0523/Library/blob/main/Software/MVVM-C.md "MVVM-C 아키텍처에 대하여 설명한 글이며, Model View ViewModel과 서로의 역할 분배 등에 대해여 작성하였다."
 [Observer Pattern]: https://github.com/jaeminKim0523/Library/blob/main/Software/ObserverPattern.md "Observer 패턴에 대하여 설명한 글이며, 목차는 기본 개념, Observer, Subject, 마무리이다."  
-[Dependency Injection]: https://github.com/jaeminKim0523/Library/blob/main/Software/[DependencyInjection.md "의존성을 주입하는 것에 대한 예제로 Swift에서 protocol을 이용하여 의존성을 분리하는 방법을 설명하는 글이다."
+[Dependency Injection]: https://github.com/jaeminKim0523/Library/blob/main/Software/DependencyInjection.md "의존성을 주입하는 것에 대한 예제로 Swift에서 protocol을 이용하여 의존성을 분리하는 방법을 설명하는 글이다."
 
 ### Compiler
 - ARC link: [ARC]  
