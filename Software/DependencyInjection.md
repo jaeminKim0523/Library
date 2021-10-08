@@ -79,7 +79,7 @@ Swift에서 추상화는 Protocol이다.
 이 '의존관계 역전의 원칙'을 지켜 위에서 보았던 예제들을 수정해보자.  
 
 ```Swift
-// 핵심에서 말했던, protocol을 선언해준다.
+// 핵심에서 말했던, 추상화인 protocol을 선언해준다.
 protocol ListDataProvider {
   var list: [String] { get set }
 }
