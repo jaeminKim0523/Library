@@ -4,6 +4,7 @@
 ### Software Architecture, Design Pattern
 - MVVM-C iOS architecture link: [MVVM-C]  
 - Observer pattern link: [Observer Pattern]
+- Dependency Injection link: [Dependency Injection]
 
 [MVVM-C]: https://github.com/jaeminKim0523/Library/blob/main/Software/MVVM-C.md "MVVM-C 아키텍처에 대하여 설명한 글이며, Model View ViewModel과 서로의 역할 분배 등에 대해여 작성하였다."
 [Observer Pattern]: https://github.com/jaeminKim0523/Library/blob/main/Software/ObserverPattern.md "Observer 패턴에 대하여 설명한 글이며, 목차는 기본 개념, Observer, Subject, 마무리이다."  
