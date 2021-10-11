@@ -20,11 +20,13 @@
 - Closure link: [Closure]
 - Ecaping과 None-Escaping의 차이 link: [Escaping]  
 - DispatchQueue 사용 link: [DispatchQueue]  
+- Generic과 AssociatedType link: [GenericAssociatedType]
 
 [ValueReferenceTypes]: https://github.com/jaeminKim0523/Library/blob/main/Swift/ValueReferenceTypes.md "Value(struct, enum, protocol 등)와 Reference(class 등) 타입에 대한 설명과 각 타입의 종류, 그리고 해당 타입들이 관리되는 방식과 자세한 설명을 했다."
 [Closure]: https://github.com/jaeminKim0523/Library/blob/main/Swift/Closure.md "Closure의 심화 내용을 작성하였다. ecaping closure를 사용하기전에 참고하면 좋을 것 같다."
 [Escaping]: https://github.com/jaeminKim0523/Library/blob/main/Swift/Escaping.md "비동기 Closure인 escaping closure를 설명한 글이다."
 [DispatchQueue]: https://github.com/jaeminKim0523/Library/blob/main/Swift/DispatchQueue.md "DispatchQueue에 대하여 설명한 글이다. DispatchQueue의 특징에 대하여 설명을 하고 Queue가 어떻게 작동하는지, 어떤 종류의 Queue를 사용하는지를 알아보고 Queue에 쌓인 작업의 중요도에 따른 작업 순서와 동기, 비동기에 대한 설명을 작성하였다."
+[GenericAssociatedType]: https://github.com/jaeminKim0523/Library/blob/main/Swift/GenericAssociatedType.md "AssociatedType을 이용하여 Generic을 사용하는 방법에 대하여 작성한 글이다."
 
 ### RxSwift
 - RxSwift link: [RxSwift]
