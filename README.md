@@ -21,7 +21,7 @@
 - Ecaping과 None-Escaping의 차이 link: [Escaping]  
 - DispatchQueue 사용 link: [DispatchQueue]  
 - Generic과 AssociatedType link: [GenericAssociatedType]
-- 
+- UITest link: [UITest]
 
 [ValueReferenceTypes]: https://github.com/jaeminKim0523/Library/blob/main/Swift/ValueReferenceTypes.md "Value(struct, enum, protocol 등)와 Reference(class 등) 타입에 대한 설명과 각 타입의 종류, 그리고 해당 타입들이 관리되는 방식과 자세한 설명을 했다."
 [Closure]: https://github.com/jaeminKim0523/Library/blob/main/Swift/Closure.md "Closure의 심화 내용을 작성하였다. ecaping closure를 사용하기전에 참고하면 좋을 것 같다."
