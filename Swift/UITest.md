@@ -53,8 +53,8 @@ func testMainTableView() {
 너무 간단하지만... UITest를 하는 방법을 알려주기 위함이므로 부족하지는 않을 것 같다.  
 코드에 주석으로 작성된 숫자가 코드 위의 스크린샷에 나오는 순서와 같고 해당 UI를 작동시키는 코드이다.  
 
-![스크린샷 2021-10-24 오전 12 29 36](https://user-images.githubusercontent.com/55477102/138562521-68c340e8-d9bc-4d8c-b479-103a551ab5ce.png)
+![스크린샷 2021-10-24 오전 12 29 36](https://user-images.githubusercontent.com/55477102/138562521-68c340e8-d9bc-4d8c-b479-103a551ab5ce.png)  
 위의 스크린샷 네모 박스에 있는 마름모에 마우스를 오버하면 재생 버튼이 활성화 된다.  
-그 재생 버튼을 누르면 아래와 같이 자동으로 테스트가 진행되고 종료된다.
+그 재생 버튼을 누르면 아래와 같이 자동으로 테스트가 진행되고 종료된다.  
 
 https://user-images.githubusercontent.com/55477102/138562463-4e551e35-77cb-48f0-bbd1-d834cd75db71.mov
