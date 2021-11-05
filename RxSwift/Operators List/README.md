@@ -20,7 +20,7 @@
 19. [concatMap]
 20. merge
 21. combineLatest
-22. zip
+22. [zip]
 23. withLatestFrom
 24. sample
 25. amb
