@@ -78,3 +78,4 @@
 [startWith]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/startWith.md "Read startWith"
 [concat]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/concat.md "Read concat"
 [concatMap]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/concatMap.md "Read concatMap"
+[zip]: https://github.com/jaeminKim0523/Library/blob/main/RxSwift/Operators%20List/zip.md "Read zip"
