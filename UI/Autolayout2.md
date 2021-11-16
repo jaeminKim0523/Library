@@ -1,6 +1,6 @@
 # Autolayout2 - Content Hugging Priority
 Autolayout1에서는 Constraint를 설정하는 기초를 알아보았다면, 2에서는 조금 심화된 내용인 Content Hugging Priority 알아보려고 한다.  
-Content Hugging Priority를 직역하면, 콘텐츠가 안는 우선순위 이다.  
+Content Hugging Priority를 직역하면, 콘텐츠가 커지는 우선순위 이다.  
 핵심은 Content Hugging Priority는 Content가 자신의 크기 이상으로 늘어날 수 있는지의 중요도이다.  
 이 의미는 말로 설명하기보다는 스크린샷과 사용방법을 설명하면서 이해하는 것이 좋을 거 같다.  
 
