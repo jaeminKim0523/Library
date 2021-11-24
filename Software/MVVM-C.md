@@ -140,7 +140,7 @@ ViewModel은 Model과의 데이터 송, 수신 및 Coordinator로 화면 구성 
 ***
 첫번째로 Service와 데이터를 주고받는 코드를 보면,  
 ```Swift
-// 데이터 변화를 알리기 위한 Combine 
+// 데이터 변화를 알리기 위한 Combine import
 import Combine
 
 // 검색 데이터를 알리 위한 PassthroughSubject
@@ -201,7 +201,8 @@ func displayDetailViewController(entity: entity) {
         navigationController.pushViewController(detailViewController, animated: true)
 }
 ```
-코드는 정말 별게 없다.
+코드는 정말 별게 없다.  
+
 ViewModel은 Coordinator의 DetailViewController를 보여주기 위한 함수를 호출한다.  
 여기서 중요한건 Entity를 넘겨준다는 것이다.  
 View는 Entity를 ViewModel로 부터 받아서 사용하기에 Entity를 가지고 있지 않는다.  
