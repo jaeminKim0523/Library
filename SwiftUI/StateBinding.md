@@ -31,14 +31,14 @@ struct ContentView: View {
 ```Swift
 struct ContentView: View {
     
-    @State var color: Color = .red
+    @State var mainColor: Color = .red
     
     var body: some View {
         VStack{
             Spacer()
-            ContentView2(color: $color)
+            ContentView2(color: $mainColor)
             Spacer()
-            ContentView2(color: $color)
+            ContentView2(color: $mainColor)
             Spacer()
         }
     }
@@ -55,3 +55,12 @@ struct ContentView2: View {
     }
 }
 ```
+이 또한 너무 짧고 대충 코딩한 것 같지만...  
+먼저 ContentView2를 보자.  
+첫번째: @Binding 어노테이션을 사용하는 Color타입의 color변수  
+두번째: ColorPicker UI에 첫번째에서 설명한 color 변수에 $를 붙여서 Binding<Color> 타입을 전달
+
+https://user-images.githubusercontent.com/55477102/144591833-4c1ef8ba-4a79-4370-baa5-5fa6fda7381d.mov
+
+실행시 위와 같다.  
+2개의 ContentView2안에 있는 ColorPicker가 ContentView의 mainColor 변수를 같이 바인딩하고 있고 mainColor의 값이 변하면 다른 ContentView2의 Color도 변하게 되는 것이다.
