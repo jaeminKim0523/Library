@@ -43,7 +43,7 @@
 ### UI
 - Autolayout - Constraint: [Autolayout1]  
 - Autolayout - Content Hugging Priority: [Autolayout2]
-- Autolayout - Content Compression Resistance Priority: [Autolayout2]
+- Autolayout - Content Compression Resistance Priority: [Autolayout3]
 - Bounds - Bounds란?: [Bounds]
 
 [Autolayout1]: https://github.com/jaeminKim0523/Library/blob/main/UI/Autolayout1.md "Autolayout1에서는 Constraint를 이용하여 Autolayout을 잡는 방법을 간단하게 설명하였다."  
