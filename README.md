@@ -55,6 +55,8 @@
 ### SwiftUI
 - SwiftUI: [SwiftUI]
 - State Binding: [State Binding]
+- ObservableObject: [ObservableObject]
 
 [SwiftUI]: https://github.com/jaeminKim0523/Library/blob/main/SwiftUI/SwiftUI.md "현재 스터디중인 SwiftUI의 장점과 단점을 간단하게 말해보았다."
-[State Binding]: https://github.com/jaeminKim0523/Library/blob/main/SwiftUI/StateBinding.md ""
+[State Binding]: https://github.com/jaeminKim0523/Library/blob/main/SwiftUI/StateBinding.md "SwiftUI에서 가장 기본적인 데이터 바인딩 어노테이션중 하나를 알아보았다."
+[ObservableObject]: https://github.com/jaeminKim0523/Library/blob/main/SwiftUI/ObservableObject.md "SwiftUI의 데이터 바인딩 어노테이션 중 하나로, MVVM과 같은 SoftwareArchitecture에서 사용될 핵심 어노테이션으로 예상되어 알아보았다."
