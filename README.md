@@ -54,5 +54,7 @@
 
 ### SwiftUI
 - SwiftUI: [SwiftUI]
+- State Binding: [State Binding]
 
 [SwiftUI]: https://github.com/jaeminKim0523/Library/blob/main/SwiftUI/SwiftUI.md "현재 스터디중인 SwiftUI의 장점과 단점을 간단하게 말해보았다."
+[State Binding]: https://github.com/jaeminKim0523/Library/blob/main/SwiftUI/StateBinding.md ""
