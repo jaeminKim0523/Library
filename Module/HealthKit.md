@@ -50,7 +50,7 @@ let predicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate, 
 
 ### 4. 읽기/쓰기 권한 설정
 ```Swift
-// 쓰기 권한 배열
+// 쓰기 권한 배열 (테스트를 위해 많이 넣었지만, 원하는 정보의 ID만 사용하면 된다.)
 let writeTypes: Set<HKSampleType> = [.workoutType(),
                                      HKSampleType.quantityType(forIdentifier: .heartRate)!,
                                      HKSampleType.quantityType(forIdentifier: .activeEnergyBurned)!,
@@ -60,7 +60,7 @@ let writeTypes: Set<HKSampleType> = [.workoutType(),
                                      HKSampleType.quantityType(forIdentifier: .distanceWalkingRunning)!,
                                      HKSampleType.quantityType(forIdentifier: .swimmingStrokeCount)!]
 
-// 읽기 권한 배열
+// 읽기 권한 배열 (테스트를 위해 많이 넣었지만, 원하는 정보의 ID만 사용하면 된다.)
 let readTypes: Set<HKObjectType> = [.activitySummaryType(), .workoutType(),
 	                                  HKObjectType.quantityType(forIdentifier: .heartRate)!,
 	                                  HKObjectType.quantityType(forIdentifier: .activeEnergyBurned)!,
