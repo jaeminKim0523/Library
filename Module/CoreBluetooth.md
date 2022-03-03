@@ -34,7 +34,7 @@ class BLEService: NSObject {
 
 ***
 ### CentralManagerDelegate
-```
+```Swift
 extension BLEService: CBCentralManagerDelegate {
   // CentralManager의 상태가 바뀌면 불린다.
   func centralManagerDidUpdateState(_ central: CBCentralManager) {
