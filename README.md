@@ -30,6 +30,13 @@
 [GenericAssociatedType]: https://github.com/jaeminKim0523/Library/blob/main/Swift/GenericAssociatedType.md "AssociatedType을 이용하여 Generic을 사용하는 방법에 대하여 작성한 글이다."
 [UITest]: https://github.com/jaeminKim0523/Library/blob/main/Swift/UITest.md "Xcode에서 UI Testing Bundle을 이용하여 사용자가 앱을 어떻게 사용 할지 예상하고 UI와 기능이 정상 작동되는지에 대한 시나리오를 자동화하여 테스트하는 방법에 대하여 설명한다."
 
+### Module
+- HealthKit link: [HealthKit]
+- CoreBluetooth1 link: [CoreBluetooth1]
+
+[HealthKit]: https://github.com/jaeminKim0523/Library/blob/main/Module/HealthKit.md "디바이스를 통해 사용자의 건강 정보를 가져오는 모듈의 간단한 사용법을 작성하였다."
+[CoreBluetooth1]: https://github.com/jaeminKim0523/Library/blob/main/Module/CoreBluetooth.md "디바이스에서 스캔된 블루투스를 찾아서 배열화 하는 방법에 대하여 작성하였다."
+
 ### RxSwift
 - RxSwift link: [RxSwift]
 
