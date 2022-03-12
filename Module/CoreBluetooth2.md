@@ -21,7 +21,10 @@ protocol BLEServiceProtocol {
     }
   }
 ```
+블루투스가 연결에 성공하였을때 불리는 Delegate pattern 메소드이다.
+연결이 완료된 블루투스(peripheral)을 connectedPeripheral에 넣어주고 peripheral의 delegate를 받는다.
 
+연결된 peripheral이 현재 검색된 블루투스 리스트에 존재하면 교체한다.
 
 
 # CoreBluetooth - Disconnect
@@ -32,7 +35,8 @@ protocol BLEServiceProtocol {
     connectedPeripheral = nil
   }
 ```
-
+블루투스가 연결이 종료되면 불리는 Delegate pattern 메소드이다.
+연결이 끊기면 connectedPeripheral를 null로 만들어준다.
 
 
 [CoreBluetooth]: https://github.com/jaeminKim0523/Library/blob/main/CoreBluetooth.md "Read CoreBluetooth"
