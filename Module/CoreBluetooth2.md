@@ -12,6 +12,13 @@ protocol BLEServiceProtocol {
 
 # CoreBluetooth - Connect
 ```Swift
+  func connectPeripheral(id: String) {
+    guard let filtered = self.peripherals.first(where: { $0.identifier.uuidString == id }) else { return }
+
+    print("will Connect Peripheral Identifier: \(id)")
+    self.centralManager?.connect(filtered, options: nil)
+  }
+
   func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
     connectedPeripheral = peripheral
     connectedPeripheral?.delegate = self
@@ -29,6 +36,12 @@ protocol BLEServiceProtocol {
 
 # CoreBluetooth - Disconnect
 ```Swift
+  func disconnectPeripheral(id: String) {
+    guard let filtered = self.peripherals.first(where: { $0.identifier.uuidString == id }) else { return }
+
+    self.centralManager?.cancelPeripheralConnection(filtered)
+  }
+  
   func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
     print("did disconnect Peripheral Identifier: \(peripheral.identifier.uuidString)")
     
