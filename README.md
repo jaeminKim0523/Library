@@ -34,7 +34,7 @@
 
 ### Module
 - HealthKit link: [HealthKit]
-- CoreBluetooth - Bluetooth Scan link: [CoreBluetooth]
+- CoreBluetooth - Bluetooth Scan link: [CoreBluetooth1]
 
 [HealthKit]: https://github.com/jaeminKim0523/Library/blob/main/Module/HealthKit.md "디바이스를 통해 사용자의 건강 정보를 가져오는 모듈의 간단한 사용법을 작성하였다."
 [CoreBluetooth1]: https://github.com/jaeminKim0523/Library/blob/main/Module/CoreBluetooth.md "디바이스에서 스캔된 블루투스를 찾아서 배열화 하는 방법에 대하여 작성하였다."
