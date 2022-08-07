@@ -35,7 +35,8 @@
 - Protocol-2 link: [Protocol2]
 
 [Protocol1]: https://github.com/jaeminKim0523/Library/blob/main/POP/Protocol1.md "Protocol을 선언하고 상속시켜서 사용하는 방법에 대하여 간단하게 설명하였다."
-[Protocol2]: https://github.com/jaeminKim0523/Library/blob/main/POP/Protocol2.md "Protocol을 선언하고 상속시켜서 사용하는 방법에 대하여 간단하게 설명하였다."
+[Protocol2]: https://github.com/jaeminKim0523/Library/blob/main/POP/Protocol2.md "Protocol에 extension을 사용하여 함수를 선언하는 방법을 설명하였다."
+[Protocol3]: https://github.com/jaeminKim0523/Library/blob/main/POP/Protocol3.md "Protocol을 상속하였을 때 상수, 변수, 함수와 같은 값의 강제선언을 제거하는 방법에 대해 설명하였다."
 
 ### Module
 - HealthKit link: [HealthKit]
